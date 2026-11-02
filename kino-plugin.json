@@ -1,0 +1,21 @@
+{
+  "id": "cine-trivia",
+  "name": "Cine Trivia",
+  "version": "1.0.0",
+  "apiVersion": 20,
+  "entry": "plugin.js",
+  "description": "Cinco preguntas de cine, quince segundos cada una: las películas llegan del plugin TMDB",
+  "author": "kinotvapp",
+  "hosts": ["image.tmdb.org"],
+  "capabilities": ["screen"],
+  "screen": { "label": "Cine Trivia", "labelEn": "Cine Trivia", "icon": "movie", "menuOpens": "screen" },
+  "recommends": ["kinotvapp/kino-plugin-tmdb"],
+  "consumes": {
+    "tmdb": {
+      "repo": "kinotvapp/kino-plugin-tmdb",
+      "door": "movies",
+      "calls": ["random", "byId"],
+      "streams": ["trending"]
+    }
+  }
+}

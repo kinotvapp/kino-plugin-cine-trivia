@@ -1,0 +1,14 @@
+{
+  "name": "kino-plugin-cine-trivia",
+  "private": true,
+  "type": "module",
+  "description": "Cine Trivia, a consumer of the Kino plugin protocol: five movie questions from the TMDB plugin's door \"movies\". Its source lives in src/, and `npm run build` bundles it into the shipped plugin.js.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check:built": "node scripts/build.mjs --check"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0"
+  }
+}
